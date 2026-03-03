@@ -29,11 +29,11 @@ class Car extends Vehicle {
     summary: string
 }
 
-function printCarInfo(): string {
-    return `This is the make of the car: ${this.name} and its color is ${this.color}`
+function printCarInfo(car: Car): string {
+    return `This is the make of the car: ${car.name} and its color is ${car.color}`
 }
 
 const car = new Car({color: "red", name: "Niro"})
-car.summary = printCarInfo()
+car.summary = printCarInfo(car)
 car.startDriving()
 console.log(car.summary)
