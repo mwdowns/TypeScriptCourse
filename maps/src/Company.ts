@@ -1,5 +1,4 @@
-// @ts-ignore
-import faker from 'faker'
+import * as faker from 'faker'
 
 export class Company {
     companyName: string;
